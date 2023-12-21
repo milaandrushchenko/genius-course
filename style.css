@@ -122,6 +122,7 @@ ul{
 }
 .section{
     margin-bottom: 96px;
+    position: relative;
 }
 
 .secondary-title{
@@ -151,6 +152,9 @@ ul{
 }
 
 /* header */
+header{
+    background-color: rgba(255, 255, 255, 0.25)
+}
 .logo{
     color: var(--primary-color-blue);
     font-weight: 700;
@@ -199,18 +203,32 @@ ul{
     font-family: 'Play', sans-serif;
     margin-bottom: 40px;
 }
-.main-section{
-    /* width: 100%;
-    max-width: 1028px;
-    margin: 0 auto; */
+header{
+    background: linear-gradient(89.38deg, #FFFFFF 30.62%, rgba(255, 255, 255, 0.850898) 41.31%, rgba(255, 255, 255, 0.193204) 58.65%, rgba(255, 255, 255, 0) 72.78%);
+    background-color: rgba(255, 255, 255, 0.25)
 }
-.main-section {
-    background: url('/images/header-image.jpg') right/contain no-repeat;
+header::after {
+    content: '';
+    background-image: url('/images/header-image.jpg');
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1130px;
+    height: 633px;
+    z-index: -2;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.main-section{
+    background: linear-gradient(89.38deg, #FFFFFF 30.62%, rgba(255, 255, 255, 0.850898) 41.31%, rgba(255, 255, 255, 0.193204) 58.65%, rgba(255, 255, 255, 0) 72.78%);
+    margin-bottom: 0px;
+
 }
 .main-section-container{
     width: 100%;
     max-width: 1028px;
-    margin: 16px auto;
+    padding: 16px 0 0 206px;
     padding-bottom: 126px;
 }
 .main-section-contant{
@@ -228,16 +246,19 @@ ul{
 /* section about clinic */
 .about-section{
     margin-bottom: 176px;
+    height: 695px;
 }
 .about-section-container{
+    position: relative;
     display: flex;
     gap: 32px;
 }
-.about-section p{
+.about-section p{    
     font-size: 22px;
     line-height: 1.7;
 }
 .about-section-content .secondary-title{
+    margin-top: 40px;
     margin-bottom: 40px;
 }
 .about-section-content p:not(:last-child){
@@ -255,6 +276,44 @@ ul{
     max-width: 709px;
 }
 
+.icon-star-1{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    content: '';
+    fill: var(--primary-color-blue);
+    right: -32px;
+    top: 32px;
+}
+.icon-star-2 {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    content: '';
+    fill: var(--secondary-color-light-gray);
+    right: 6px;
+    top: 270px;
+}
+.icon-star-3 {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    content: '';
+    fill: var(--secondary-color-dark);
+    right: 295px;
+    top: 336px;
+}
+.about-section-images{
+    /* position: relative; */
+}
+.about-section-images img{
+    border-radius: 50%;
+}
+.about-section-images img:last-child {
+    position: absolute;
+    right: 0;
+    top: 367px;
+}
 /* section advantages */
 .section-advantages h4{
     color:black;
@@ -339,7 +398,19 @@ ul{
 
 /* footer */
 footer{
+    position: relative;
     background: var(--primary-color-dark) url('/images/background.png') 0 0/cover no-repeat;
+}
+footer::after{
+    position: absolute;
+    width: 250px;
+    height: 150px;
+    bottom: 0;
+    right: 0;
+    background-image: url(/images/footer-img.png);
+    background-repeat: no-repeat;
+    
+    content: '';
 }
 footer a{
     color: var(--primary-color-light);
