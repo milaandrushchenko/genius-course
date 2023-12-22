@@ -437,3 +437,32 @@ footer a{
 .explanation-text{
     margin-top: 16px;
 }
+/* modal*/
+.backdrop{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+.backdrop.hidden{
+    display: none;
+}
+.modal{
+    height: 681px;
+    width: 723px;    
+    border-radius: 48px;
+    position: relative;
+    background:var(--primary-color-dark) url('/images/modal-background.png') 0 0/cover no-repeat;;
+}
+.close-modal-button{
+    position: absolute;
+    right: 42px;
+    top: 42px;
+    width: 32px;
+    height: 32px;
+}
