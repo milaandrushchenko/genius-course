@@ -1,0 +1,24 @@
+.section-advantages h4 {
+    color: black;
+    text-align: center;
+}
+
+.section-advantages-container {
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+.section-advantages-container .secondary-title {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.section-advantages-blocks {
+    display: flex;
+    gap: 56px;
+}
+
+.section-advantages-blocks article {
+    padding: 24px 32px;
+}

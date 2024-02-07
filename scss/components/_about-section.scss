@@ -1,0 +1,127 @@
+.about-section {
+    margin-bottom: 176px;
+    height: 695px;
+}
+
+.about-section-container {
+    position: relative;
+    display: flex;
+    gap: 32px;
+}
+
+.about-section p {
+    font-size: 22px;
+    line-height: 1.7;
+}
+
+.about-section-content .secondary-title {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.about-section-content p:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.about-section .highlight-text {
+    font-weight: 600;
+}
+
+.about-section .secondary-title {
+    text-align: left;
+    max-width: 529px;
+}
+
+.about-section-content {
+    width: 100%;
+    max-width: 709px;
+}
+
+.icon-star-1 {
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    fill: var(--primary-color-blue);
+    right: -32px;
+    top: 32px;
+
+    animation: icon-star-1-animation 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes icon-star-1-animation {
+    0% {
+        width: 24px;
+        height: 24px;
+    }
+
+    100% {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.icon-star-2 {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    content: '';
+    fill: var(--secondary-color-light-gray);
+    right: 6px;
+    top: 270px;
+
+    animation: icon-star-2-animation 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes icon-star-2-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(23deg);
+    }
+}
+
+.icon-star-3 {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    content: '';
+    fill: var(--secondary-color-dark);
+    right: 295px;
+    top: 336px;
+
+    animation: icon-star-3-animation 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes icon-star-3-animation {
+    0% {
+        width: 24px;
+        height: 24px;
+        transform: rotate(10deg);
+    }
+
+    100% {
+        width: 64px;
+        height: 64px;
+        transform: rotate(30deg);
+    }
+}
+
+.about-section-images {
+    /* position: relative; */
+}
+
+.about-section-images img {
+    border-radius: 50%;
+}
+
+.about-section-images img:last-child {
+    position: absolute;
+    right: 0;
+    top: 367px;
+}
