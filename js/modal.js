@@ -1,6 +1,6 @@
 let backdrop = document.querySelector(".backdrop");
-let openModalButton = document.querySelector(".open-modal-button");
-let closeModalButton = document.querySelector(".close-modal-button");
+let openModalButton = document.querySelector(".modal__open-button");
+let closeModalButton = document.querySelector(".modal__close-button");
 
 const clickOnButton = () => backdrop.classList.toggle("hidden");
 

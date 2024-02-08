@@ -22,48 +22,35 @@
     border-radius: 48px;
     position: relative;
     background: var(--primary-color-dark) url('/images/modal-background.png') 0 0/cover no-repeat;
-
     display: flex;
     justify-content: center;
     text-align: center;
 
-}
+    &__title{
+        color: var(--primary-color-light);
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 1.15;
+        font-family: 'Play', sans-serif;
+        margin-bottom: 40px;
+    }
 
-.modal-content {
-    margin: 42px 0;
-    text-align: center;
-    max-width: 435px;
-    width: 100%;
-    /* overflow: auto; */
-}
+    &__content{
+        margin: 42px 0;
+        text-align: center;
+        max-width: 435px;
+        width: 100%;
+    }
+    &__form-container {
+        margin: 40px 62.5px 0 62.5px;
+        text-align: center;
+    }
+    &__close-button{
+        position: absolute;
+        right: 42px;
+        top: 42px;
+        width: 32px;
+        height: 32px;
+    }
 
-.modal-form-container {
-    margin: 40px 62.5px 0 62.5px;
-    text-align: center;
-}
-.close-modal-button {
-    position: absolute;
-    right: 42px;
-    top: 42px;
-    width: 32px;
-    height: 32px;
-}
-
-.submit-modal-button {
-    margin-bottom: 8px;
-}
-
-.submit-modal-button:hover {
-    color: var(--primary-color-light);
-}
-
-.submit-modal-button+.explanation-text {
-    max-width: 213px;
-    text-align: center;
-    display: inline-block;
-}
-
-.submit-modal-button+.explanation-text>a {
-    color: inherit;
-    text-decoration: underline;
 }

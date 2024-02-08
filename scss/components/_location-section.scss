@@ -1,22 +1,29 @@
-.location-section-container {
-    width: 100%;
-    max-width: 1060px;
-    margin: 0 auto;
-    display: flex;
-    gap: 32px;
+.location-section {
+    &__container{
+        width: 100%;
+        max-width: 1060px;
+        margin: 0 auto;
+        display: flex;
+        gap: 32px;        
+    }
+    &__form-container{
+            border-radius: 48px;
+            background: var(--primary-color-dark) url('/images/modal-background.png') 0 0/cover no-repeat;
+            padding: 48px 56px;
+            text-align: center;
+        }
+    &__contact-map {
+        max-width: 605px;
+        max-height: 481px;
+        width: 100%;
+        border-radius: 32px;
+        border: none;
+    }
 }
 
-.contact-map {
-    max-width: 605px;
-    max-height: 481px;
-    width: 100%;
-    border-radius: 32px;
-    border: none;
-}
-
-.location-section-container .form-container {
-    border-radius: 48px;
-    background: var(--primary-color-dark) url('/images/modal-background.png') 0 0/cover no-repeat;
-    padding: 48px 56px;
-    text-align: center;
-}
+// .location-section-container .form-container {
+//     border-radius: 48px;
+//     background: var(--primary-color-dark) url('/images/modal-background.png') 0 0/cover no-repeat;
+//     padding: 48px 56px;
+//     text-align: center;
+// }
