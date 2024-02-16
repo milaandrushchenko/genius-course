@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header">
+    <header>        
+        <div class="header">
+            <div class="container">
                 <div class="header__container">
                     <!--LOGO-->
                     <a class="logo" href="#">Beauty Zone</a>
@@ -51,7 +52,7 @@
             </div>     
         </div>
     </header>
-    <main>
+    <main class="main">
          <section class="section main-section">
             <div class="container">
                 <div class="main-section__container">
@@ -134,18 +135,51 @@
         <section class="section procedures-section">
             <div class="container">
                 <h2 class="secondary-title procedures-section__title">Наші <span>процедури</span></h2>
-                <div class="procedures-section__content">
-                    <button type="button" class="procedures-section__carousel-button">
+                <div class="procedures-section__slider">
+                    <button type="button" class="procedures-section__carousel-button prev">
                         <svg>
                             <use href="/images/icons.svg#icon-arrow"></use>
                         </svg>
                     </button>
-                    <ul class="procedures-section__list">
-                        <li class="procedures-section__item"><article><h3>Маски для обличчя</h3></article></li>
-                        <li class="procedures-section__item"><article><h3>Ін'єкції для обличчя</h3></article></li>
-                        <li class="procedures-section__item"><article><h3>Очищення обличчя</h3></article></li>
-                    </ul>
-                    <button type="button" class="procedures-section__carousel-button procedures-section__carousel-button_right-arrow">
+                    <div class="procedures-section__container swiper-container">
+                        <ul class="procedures-section__list swiper-wrapper">
+                            <li class="procedures-section__item swiper-slide">
+                                <article class="procedure-card">
+                                    <h3 class="procedure-card__title">Маски для обличчя</h3>
+                                    <img class="procedure-card__img" src="./images/procedure-1.jpg" alt="procedure-1">
+                                </article>
+                            </li>
+                            <li class="procedures-section__item swiper-slide">
+                                <article class="procedure-card"><h3 class="procedure-card__title">Ін'єкції для обличчя</h3><img class="procedure-card__img" src="./images/procedure-2.jpg" alt="procedure-2">
+                                </article>
+                            </li>
+                            <li class="procedures-section__item swiper-slide">
+                                <article class="procedure-card"><h3 class="procedure-card__title">Очищення обличчя</h3><img class="procedure-card__img" src="./images/procedure-3.jpg" alt="procedure-3">
+                                </article>
+                            </li>
+                            <li class="procedures-section__item swiper-slide">
+                                <article class="procedure-card">
+                                    <h3 class="procedure-card__title">Маски для обличчя</h3>
+                                    <img class="procedure-card__img" src="./images/procedure-1.jpg" alt="procedure-1">
+                                </article>
+                            </li>
+                            <li class="procedures-section__item swiper-slide">
+                                <article class="procedure-card">
+                                    <h3 class="procedure-card__title">Ін'єкції для обличчя</h3><img class="procedure-card__img"
+                                        src="./images/procedure-2.jpg" alt="procedure-2">
+                                </article>
+                            </li>
+                            <li class="procedures-section__item swiper-slide">
+                                <article class="procedure-card">
+                                    <h3 class="procedure-card__title">Очищення обличчя</h3><img class="procedure-card__img"
+                                        src="./images/procedure-3.jpg" alt="procedure-3">
+                                </article>
+                            </li>
+                        </ul>
+                        <div class="pagination">
+                        </div>
+                    </div>
+                    <button type="button" class="procedures-section__carousel-button procedures-section__carousel-button_right-arrow next">
                         <svg>
                             <use href="/images/icons.svg#icon-arrow"></use>
                         </svg>
@@ -272,6 +306,8 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/procedures-slider.js" ></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>

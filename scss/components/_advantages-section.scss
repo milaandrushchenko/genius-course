@@ -1,4 +1,5 @@
 .advantages-section {
+
     &__container {
         width: 100%;
         max-width: 1060px;
@@ -6,7 +7,7 @@
 
         & .secondary-title {
             max-width: 450px;
-            margin: 0 auto;
+            margin: 0  auto 48px auto;
         }
     }
 
@@ -31,7 +32,7 @@
             height: 181px;
             padding: 24px, 32px, 24px, 32px;
             border-radius: 32px;
-            background-color: gray;
+            background-color: var(--primary-color-light);
         }
     }
 }

@@ -1,12 +1,18 @@
 .main-section {
-    background: linear-gradient(89.38deg, #FFFFFF 30.62%, rgba(255, 255, 255, 0.850898) 41.31%, rgba(255, 255, 255, 0.193204) 58.65%, rgba(255, 255, 255, 0) 72.78%);
-    margin-bottom: 0px;
+    background-image: url('/images/header-background.png');
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -118px;
+    margin-bottom: -100px;
+    padding: 106px 0px 20px 0px;
+    height: 658px;
 
     &__container {
         width: 100%;
         max-width: 1028px;
-        padding: 16px 0 0 206px;
-        padding-bottom: 126px;
+        padding: 16px 0 126px 206px;
     }
     &__content {
         width: 50%;
