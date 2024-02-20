@@ -16,9 +16,10 @@
 }
 
 .modal {
-    max-height: 681px;
+    margin: 16px 16px;
+    max-height: 550px;
     height: 100%;
-    max-width: 723px;
+    max-width: 723px;    
     width: 100%;
     border-radius: 48px;
     position: relative;
@@ -26,14 +27,21 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    @media screen and(min-width:$bp-tablet) {
+        max-height: 681px;
+    }
 
     &__title{
         color: var(--primary-color-light);
         font-weight: 700;
-        font-size: 64px;
+        font-size: 32px;
         line-height: 1.15;
         font-family: 'Play', sans-serif;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
+        @media screen and(min-width:$bp-tablet) {
+            font-size: 64px;
+            margin-bottom: 40px;
+        }
     }
 
     &__content{
@@ -48,10 +56,24 @@
     }
     &__close-button{
         position: absolute;
-        right: 42px;
-        top: 42px;
+        right: 22px;
+        top: 22px;
         width: 32px;
         height: 32px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        @media screen and(min-width:$bp-tablet) {
+            right: 42px;
+            top: 42px;
+        }
+    
+        & svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--primary-color-light);
+        }
     }
 
 }

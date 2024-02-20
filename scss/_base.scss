@@ -34,8 +34,12 @@ a {
 }
 .container {
     width: 100%;
-    max-width: 1240px;
+    max-width: 1280px;
     margin: 0 auto;
+    padding: 0px 16px;    
+    @media screen and(min-width:$bp-tablet) {
+        padding: 0 24px;
+    }  
 }
 
 ul {
@@ -44,24 +48,39 @@ ul {
 }
 .main{
     background-image: url('/images/section-advantages.png');
-    background-position: 0 1220px;
-    background-size: contain;
+    // background-position: -500px 750px;
+    background-position: center 750px;
+    background-size: cover;
     background-repeat: no-repeat;
+    @media screen and(min-width:$bp-tablet) {
+        background-position: center 1050px;
+    }
+    @media screen and(min-width:$bp-desktop) {
+        background-size: contain;
+        background-position: 0 1370px;
+    }
 }
 
 .section {
-    margin-bottom: 96px;
+    margin-bottom: 40px;
     position: relative;
+    @media screen and(min-width:$bp-tablet) {
+        margin-bottom: 96px;
+    }
 }
 
 .secondary-title {
     color: var(--primary-color-dark);
     font-weight: 700;
-    font-size: 64px;
+    font-size: 32px;
     line-height: 1.2;
     text-align: center;
     font-family: 'Play', sans-serif;
-    margin-bottom: 48px;
+    margin-bottom: 24px;
+    @media screen and(min-width:$bp-tablet) {
+        font-size: 64px;
+        margin-bottom: 48px;
+    }
 }
 
 .text-highlighting {
@@ -75,10 +94,13 @@ ul {
     border: 2px solid var(--primary-color-blue);
     font-size: 16px;
     font-weight: 600;
-    border-radius: 32px;
-    padding: 16px 32px;
-
+    border-radius: 24px;
+    padding: 13px 20px;
     transition-duration: 0.2s;
+    @media screen and(min-width:$bp-tablet) {
+        border-radius: 32px;
+        padding: 16px 32px;
+    }
 }
 
 .light-button:hover {
@@ -87,9 +109,12 @@ ul {
 }
 
 .explanation-text {
-    font-size: 12px;
+    font-size: 11px;
     line-height: 1.5;
     color: var(--secondary-color-dark-gray);
+    @media screen and(min-width:$bp-tablet) {
+        font-size: 12px;
+    }
 }
 
 .hidden-block {

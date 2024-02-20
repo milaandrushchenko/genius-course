@@ -1,0 +1,86 @@
+.header {
+    background: none;    
+    @media screen and(min-width:$bp-tablet) {
+        background-color: rgba(255, 255, 255, 0.25);
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        padding: 16px 0;
+        @media screen and (min-width: $bp-tablet) {
+            padding: 32px 0;
+        }
+    }
+
+    &__nav {
+        font-size: 18px;
+        display: none;
+        gap: 56px; 
+        @media screen and (min-width: $bp-tablet) {
+            display: flex;
+        }
+    }
+    &__link {
+        color: var(--primary-color-dark);
+        transition-duration: 0.2s;
+    }
+    &__burger{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        & svg{
+            width: 20px;
+            height: 14px;
+            padding: 0;
+            
+            fill: var(--primary-color-light);
+        }
+    
+        @media screen and (min-width: $bp-tablet) {
+            display: none;
+        }
+    }
+
+    &__social-media {
+        display: none;
+        
+        @media screen and (min-width: $bp-desktop) {
+            display: flex;
+            gap: 32px;
+        }
+
+        & svg {
+            height: 32px;
+            width: 32px;
+            fill: var(--primary-color-dark);
+        }
+    }
+}
+
+.logo {
+    color: var(--primary-color-blue);
+    font-weight: 700;
+    font-family: 'Play', sans-serif;
+    font-size: 16px;
+    max-width: 74px;
+    display: inline-block;
+        @media screen and (min-width: $bp-tablet){
+            font-size: 22px;
+        }
+}
+
+
+header {
+    background: none;
+    position: absolute;
+    top: 0;
+        left: 0;
+        width: 100%;
+    z-index:100;
+    @media screen and(min-width:$bp-tablet) {
+        background: linear-gradient(89.38deg, #FFFFFF 30.62%, rgba(255, 255, 255, 0.850898) 41.31%, rgba(255, 255, 255, 0.193204) 58.65%, rgba(255, 255, 255, 0) 72.78%);
+    }
+}

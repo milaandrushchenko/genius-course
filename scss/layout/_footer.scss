@@ -1,0 +1,102 @@
+.footer {
+    position: relative;
+    background: var(--primary-color-dark) url('/images/background.png') 0 0/cover no-repeat;
+    
+
+    &::after {
+        display:none;
+        position: absolute;
+        width: 250px;
+        height: 150px;
+        bottom: 0;
+        right: 0;
+        background-image: url(/images/footer-img.png);
+        background-repeat: no-repeat;    
+        content: '';
+        @media screen and(min-width:$bp-desktop) {
+            display: block;
+        }
+    }
+    
+    & a {
+        color: var(--primary-color-light);
+        transition-duration: 0.2s;
+        font-style: normal;
+    }
+    &__logo{
+        margin-bottom: 26px;
+        & a {
+            color: var(--primary-color-blue);
+        }
+    }
+    &__container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+        font-size: 14px;
+        padding: 32px 75px 66px 75px;
+        // @media screen and(min-width:$bp-tablet) {
+        //     flex-direction: row;
+        //     justify-content: space-between;
+        //     padding: 56px 0;
+        //     text-align: left;
+        //     font-size: 18px;
+        //     gap: 20px;
+        // }
+        @media screen and(min-width:$bp-tablet) {
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 56px 0;
+            text-align: left;
+            font-size: 16px;
+            gap: 20px;
+        }
+        @media screen and(min-width:$bp-tablet) {
+            font-size: 18px;
+        }
+    }
+    &__social-media {
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+        & svg {
+            height: 24px;
+            width: 24px;
+            fill: var(--primary-color-light);
+            @media screen and(min-width:$bp-tablet) {
+                justify-content: left;
+            }
+            @media screen and(min-width:$bp-desktop) {
+                height: 42px;
+                width: 42px;
+                justify-content: left;
+            }
+        }
+    }
+    &__contact{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    &__address{
+        display: none;
+        @media screen and(min-width:$bp-tablet) {
+            display: block;
+        }
+    }
+    &__nav li:not(:last-child),
+    &__contact-detail  li:not(:last-child),
+    &__address ul:not(:last-child) {
+        margin-bottom: 16px;
+    }
+    &__terms{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        @media screen and(min-width:$bp-desktop) {
+            gap: 16px;
+        }
+    }
+}

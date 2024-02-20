@@ -1,9 +1,13 @@
 .form{
     &__sub-title {
-        margin: 0 15px 32px 15px;
+        margin: 0 0 24px 0;
         font-weight: 600;
-        font-size: 22px;
+        font-size: 16px;
         color: var(--primary-color-light);
+        @media screen and(min-width:$bp-tablet) {
+            margin: 0 15px 32px 15px;
+            font-size: 22px;
+        }
     }
     &__field{
         margin-bottom: 24px;

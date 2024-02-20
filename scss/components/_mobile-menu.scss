@@ -1,0 +1,47 @@
+.mobile-menu{
+    padding: 16px 20px;
+    background-color: var(--primary-color-light);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+
+    &.is-open {
+        transform: translateX(0);
+    }
+    &__btn-close{
+        position: absolute;
+        right: 20px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;     
+        padding: 0; 
+        & svg {
+            width: 20px;
+            height: 20px;            
+            fill:var(--primary-color-dark);
+        }
+    }
+    &__nav{
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        font-size: 14px;
+        & a{
+            color: var(--primary-color-dark);
+        }
+    }
+    &__social-media{
+        display: flex;
+        gap: 16px;
+        margin-top: 17px;
+        & svg {
+            height: 32px;
+            width: 32px;
+            fill: var(--primary-color-dark);
+        }
+    }
+}

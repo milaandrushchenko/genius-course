@@ -1,0 +1,57 @@
+.advantages-section {
+    margin-top: 50px;
+    &__container {
+        width: 100%;
+        max-width: 1060px;
+        margin: 0 auto;
+
+        & .secondary-title {
+            max-width: 250px;
+            margin: 0  auto 48px auto;
+            @media screen and(min-width:$bp-tablet) {
+                max-width: 450px;
+            }
+        }
+    }
+
+    &__blocks{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        
+        
+        & article {
+            padding: 24px 32px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            text-align: center;
+            color: black;
+            width: 316px;
+            height: 181px;
+            padding: 24px, 32px, 24px, 32px;
+            border-radius: 32px;
+            background-color: var(--primary-color-light);
+            & svg {
+                width: 48px;
+                height: 48px;
+                fill: #2B7FFF;
+            }
+        }
+        @media screen and(min-width:$bp-tablet) {
+            flex-direction: row;
+            gap: 56px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+    }
+    @media screen and(min-width:$bp-tablet) {
+        margin-top: 200px;
+    }
+    @media screen and(min-width:$bp-desktop) {
+        margin-top: 370px;
+    }
+}

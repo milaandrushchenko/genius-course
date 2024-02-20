@@ -48,6 +48,48 @@
                             </a>
                         </li>
                     </ul>
+                    <button class="header__burger menu-burger-btn-open" type="button"> <svg>
+                        <use href="/images/icons.svg#icon-burger-menu"></use>
+                    </svg></button>
+                    <div class="mobile-menu">
+                        <div cl>
+                            <button class="mobile-menu__btn-close menu-burger-btn-close" type="button"> 
+                                <svg>
+                                    <use href="/images/icons.svg#icon-close"></use>
+                                </svg>
+                            </button>
+                            <a class="mobile-menu__logo logo" href="#">Beauty Zone</a>
+                        </div>
+                        <ul class="mobile-menu__nav">
+                            <li><a class="mobile-menu__link link" href="#">Про нас</a></li>
+                            <li><a class="mobile-menu__link link" href="#">Чому ми</a></li>
+                            <li><a class="mobile-menu__link link" href="#">Наші процедури</a></li>
+                            <li><a class="mobile-menu__link link" href="#">Контакти</a></li>
+                        </ul>
+                        <ul class="mobile-menu__social-media">
+                            <li>
+                                <a href="#">
+                                    <svg class="icon">
+                                        <use href="/images/icons.svg#icon-phone"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg>
+                                        <use href="/images/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg>
+                                        <use href="/images/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>  
             </div>     
         </div>
@@ -57,7 +99,7 @@
             <div class="container">
                 <div class="main-section__container">
                     <div class="main-section__content">
-                        <p>Косметологічна клініка</p>
+                        <p class="main-section__sub-title">Косметологічна клініка</p>
                         <h1 class="main-section__title">Beauty Zone</h1>
                         <div class="main-section__container-order">
                             <button class="light-button modal__open-button">Замовити дзвінок</button>
@@ -82,6 +124,7 @@
                             З нами краса назавжди!
                         </p>
                     </div>
+                    <div class="about-section__icons">
                         <svg class="icon-star-1">
                             <use href="/images/icons.svg#icon-star"></use>
                         </svg>
@@ -91,6 +134,7 @@
                         <svg class="icon-star-3">
                             <use href="/images/icons.svg#icon-star"></use>
                         </svg>
+                    </div>
                     <div class="about-section__images">
                         
                         <img  src="/images/section-about-1.jpg" alt="">
@@ -102,7 +146,7 @@
         <section class="section advantages-section">
             <div class="container">
                 <div class="advantages-section__container">
-                    <h2 class="secondary-title">Чому люди <span>обирають нас</span></h2>
+                    <h2 class="secondary-title">Чому люди <span class="text-highlighting">обирають нас</span></h2>
                     <div class="advantages-section__blocks">
                             <article>
                                 <h4 class="hidden-block">Advantages-1</h4>
@@ -134,7 +178,7 @@
         </section>
         <section class="section procedures-section">
             <div class="container">
-                <h2 class="secondary-title procedures-section__title">Наші <span>процедури</span></h2>
+                <h2 class="secondary-title procedures-section__title">Наші <span class="text-highlighting" >процедури</span></h2>
                 <div class="procedures-section__slider">
                     <button type="button" class="procedures-section__carousel-button prev">
                         <svg>
@@ -177,6 +221,9 @@
                             </li>
                         </ul>
                         <div class="pagination">
+                            <button class="pagination__button" type="button" aria-label="Go to slide 1"></button>
+                            <button class="pagination__button" type="button" aria-label="Go to slide 2"></button>
+                            <button class="pagination__button" type="button" type="button" aria-label="Go to slide 3"></button> 
                         </div>
                     </div>
                     <button type="button" class="procedures-section__carousel-button procedures-section__carousel-button_right-arrow next">
@@ -189,7 +236,7 @@
         </section>
         <section class="section location-section"> 
             <div class="container">
-                <h2 class="secondary-title">Як нас <span>знайти</span></h2>
+                <h2 class="secondary-title">Як нас <span class="text-highlighting">знайти</span></h2>
                 <div class="location-section__container">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325719461126!2d30.5181753!3d50.4423566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C70YzQstCw0YAg0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60LAsIDUsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1700086079669!5m2!1suk!2sua"
@@ -222,9 +269,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__container">
-                <!--LOGO-->
-                <div><a class="logo" href="#">Beauty Zone</a></div>
-                <!--Navigation-->
+                <div class="footer__logo"><a class="logo" href="#">Beauty Zone</a></div>
                 <nav>                
                     <ul class="footer__nav">
                         <li><a class="footer__link link" href="#">Про нас</a></li>
@@ -233,44 +278,44 @@
                         <li><a class="footer__link link" href="#">Контакти</a></li>
                     </ul>
                 </nav>
-                <!--Address-->
-                <address class="footer__address">
-                    <ul class="footer__contact">
-                        <li><a  href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a></li>
-                        <li><a href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
-                        <li>
-                            <a href="https://maps.app.goo.gl/rC62cvbBmF9xTS6JA" target="_blank">
-                                Україна, м. Київ, <br>
-                                вул. Тараса Шевченка 5
-                            </a>
-                        </li>
-                    </ul>
-                    <!--Social Media-->
-                    <ul class="footer__social-media">
-                        <li>
-                            <a href="#">
-                                <svg class="icon">
-                                    <use href="/images/icons.svg#icon-phone"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <svg>
-                                    <use href="/images/icons.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <svg>
-                                    <use href="/images/icons.svg#icon-instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </address>
-               
+                <div class="footer__contact">
+                    <address class="footer__address">
+                        <ul class="footer__contact-detail">
+                            <li><a  href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a></li>
+                            <li><a href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
+                            <li>
+                                <a href="https://maps.app.goo.gl/rC62cvbBmF9xTS6JA" target="_blank">
+                                    Україна, м. Київ, <br>
+                                    вул. Тараса Шевченка 5
+                                </a>
+                            </li>
+                        </ul>
+                        
+                    </address>
+                   <ul class="footer__social-media">
+                            <li>
+                                <a href="#">
+                                    <svg class="icon">
+                                        <use href="/images/icons.svg#icon-phone"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg>
+                                        <use href="/images/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg>
+                                        <use href="/images/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                </div>
                 <div class="footer__terms">
                     <a href="#" target="_blank">Політика конфіденційності</a>
                     <p class="explanation-text">&copy; 2022 Дані захищені</p>
@@ -281,7 +326,11 @@
     <div class="backdrop hidden">
         <div class="modal">
             <div class="modal__content">
-                <button class="modal__close-button"></button>
+                <button class="modal__close-button">
+                    <svg>
+                        <use href="/images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
                 <h2 class="modal__title">Замовити дзвінок</h2> 
                 <div class="modal__form-container">
                    
@@ -309,5 +358,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/procedures-slider.js" ></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

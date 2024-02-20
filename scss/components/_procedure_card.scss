@@ -16,6 +16,8 @@
     }        
     &__img {
         border-radius: inherit;
+        object-fit: cover;
+        object-position: top;
         position: absolute;
         z-index: -1;
         top: 0;

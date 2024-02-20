@@ -21,9 +21,7 @@
         background-color: transparent;
         border: 2px solid var(--primary-color-dark);
         padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: none;
         cursor: pointer;
         transition-duration: 0.2s;
 
@@ -42,6 +40,11 @@
         }
         &_right-arrow {
             transform: rotate(180deg);
+        }
+        @media screen and(min-width:$bp-tablet) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
